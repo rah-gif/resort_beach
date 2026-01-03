@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BeachResort</title>
+    <meta name="description" content="Get in touch with BeachResort for bookings and inquiries.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">BeachResort<span class="dot">.</span></a>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html" class="active btn-primary">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('images/dining.png');">
+        <div class="header-overlay">
+            <h1>Contact Us</h1>
+            <p>We are here to help you</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="section contact-page">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Info Side -->
+                <div class="contact-details">
+                    <div id="booking-context" class="booking-notice" style="display:none;">
+                        <h3>Completing your booking</h3>
+                        <p>You are inquiring about: <strong id="selected-room"></strong></p>
+                    </div>
+
+                    <h2>Get in Touch</h2>
+                    <p style="margin-bottom: 30px; color: #666;">Whether you have a question about features, pricing, or need a demo, our team is ready to answer all your questions.</p>
+                    
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Wallamabeach Rd, Galle, Sri Lanka</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+94 77 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@beachresort.com</p>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <h3>Book Directly via:</h3>
+                        <div class="btn-group">
+                            <a href="tel:+94771234567" class="btn-call full-width"><i class="fa-solid fa-phone"></i> Call Reservation</a>
+                            <a href="https://wa.me/94771234567" class="btn-whatsapp full-width"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Side -->
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.5858599427!2d79.9602446!3d6.0535185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb6932fce3%3A0x4a35b903f9c64c03!2sGalle%2C%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1709400000000!5m2!1sen!2slk" width="100%" height="100%" style="border:0; min-height: 400px; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Footer (Same as index) -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <!-- Col 1: Brand -->
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo">BeachResort<span class="dot">.</span></a>
+                <p class="footer-desc">Your ultimate escape by the sea. Luxury accommodation, world-class dining, and unforgettable experiences await you in Sri Lanka.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            
+            <!-- Col 2: Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Accommodation</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Contact -->
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> Wallamabeach Rd, Galle, Sri Lanka</li>
+                    <li><i class="fa-solid fa-phone"></i> +94 77 123 4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@beachresort.com</li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Newsletter -->
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get special offers and updates.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 BeachResort. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

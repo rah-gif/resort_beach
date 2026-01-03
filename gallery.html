@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | BeachResort</title>
+    <meta name="description" content="Explore the beauty of BeachResort through our photo gallery.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">BeachResort<span class="dot">.</span></a>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html" class="btn-primary">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header" style="background-image: url('images/pool.png');">
+        <div class="header-overlay">
+            <h1>Photo Gallery</h1>
+            <p>A glimpse into paradise</p>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section gallery-page">
+        <div class="container">
+            <div class="gallery-grid full-gallery">
+                <img src="images/hero.png" alt="Resort Beach View" class="gallery-img">
+                <img src="images/room.png" alt="Luxury Interior" class="gallery-img">
+                <img src="images/dining.png" alt="Beachside Dining" class="gallery-img">
+                <img src="images/pool.png" alt="Poolside Relaxation" class="gallery-img">
+                
+                <img src="images/dining.png" alt="Romantic Dinner" class="gallery-img">
+                <img src="images/room.png" alt="Cozy Bedroom" class="gallery-img">
+                <img src="images/pool.png" alt="Sunny Pool" class="gallery-img">
+                <img src="images/hero.png" alt="Sunrise at Beach" class="gallery-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Detailed Footer (Same as index) -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <!-- Col 1: Brand -->
+            <div class="footer-col">
+                <a href="index.html" class="footer-logo">BeachResort<span class="dot">.</span></a>
+                <p class="footer-desc">Your ultimate escape by the sea. Luxury accommodation, world-class dining, and unforgettable experiences await you in Sri Lanka.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            
+            <!-- Col 2: Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rooms.html">Accommodation</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Contact -->
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> Wallamabeach Rd, Galle, Sri Lanka</li>
+                    <li><i class="fa-solid fa-phone"></i> +94 77 123 4567</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@beachresort.com</li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Newsletter -->
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get special offers and updates.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 BeachResort. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

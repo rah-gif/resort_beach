@@ -152,8 +152,10 @@ img {
 }
 .nav-menu .btn-primary {
   border-bottom: none;
+  color: var(--white) !important;
 }
-.nav-menu .btn-primary:hover {
+.nav-menu .btn-primary:hover,
+.nav-menu .btn-primary.active {
   color: var(--white) !important;
 }
 
